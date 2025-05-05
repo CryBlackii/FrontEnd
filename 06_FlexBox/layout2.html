@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>flex like oou</title>
+    <style>
+        .flexbox{
+            height: 300px;
+            border: 5px solid blue;
+            margin-bottom: 20px;
+            display: flex;
+        }
+
+        .flexbox div{
+            border: 3px solid green;
+            width: 150px;
+            margin: 20px;
+        }
+        .flex-container5 div{
+            width: 40px;
+            height: 40px;
+            background-color: yellow;
+        }
+
+        .flex-container5{
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: row;
+        }
+
+        .flex-container6 div{
+            width: 40px;
+            height: 40px;
+            background-color: purple;
+        }
+
+        .flex-container6 .div2{
+            flex-basis: 100px;
+        }
+
+        .flex-container6{
+            justify-content: flex-end;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        .flex-container7 div{
+            flex-basis: 50px;
+            background-color: brown;
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        .flex-container7 .div3{
+            background-color: yellowgreen;
+            flex-grow: 2;
+        }
+
+        .flex-container7 .div4{
+            background-color:skyblue;
+            flex-grow: 3;
+        }
+
+        .flex-container7{
+            justify-content: center;
+            align-items: center;
+            gap: 10;
+        }
+
+        .flex-container8 div{
+            flex-basis: 500px;
+            background-color: crimson;
+        }
+
+        .flex-container8 .div3{
+            flex-shrink: 2;
+        }
+
+        .flex-container8{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox flex-container5">
+        <div class="div1">Div 1</div>
+        <div class="div2">Div 2</div>
+        <div class="div3">Div 3</div>
+        <div class="div4">Div 4</div>
+    </div>  
+    <div class="flexbox flex-container6">
+        <div class="div1">Div 1</div>
+        <div class="div2">Div 2</div>
+        <div class="div3">Div 3</div>
+        <div class="div4">Div 4</div>
+    </div>  
+    <div class="flexbox flex-container7">
+        <div class="div1">Div 1</div>
+        <div class="div2">Div 2</div>
+        <div class="div3">Div 3</div>
+        <div class="div4">Div 4</div>
+    </div>  
+    <div class="flexbox flex-container8">
+        <div class="div1">Div 1</div>
+        <div class="div2">Div 2</div>
+        <div class="div3">Div 3</div>
+        <div class="div4">Div 4</div>
+    </div>  
+    <div class="flexbox flex-container9">
+        <div class="div1">Div 1</div>
+        <div class="div2">Div 2</div>
+        <div class="div3">Div 3</div>
+        <div class="div4">Div 4</div>
+    </div>  
+</body>
+</html>

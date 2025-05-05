@@ -1,0 +1,113 @@
+body{
+    background-color: #0c1014;
+    color: #ffff;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header{
+    display: flex;
+    background-color: #05080a;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo{
+    font-size: 36px;
+    margin-left: 16px;
+    text-transform: uppercase;
+}
+
+.header_nav ul{
+    list-style-type: none;
+    display: flex;
+    font-size: 18px;
+    gap: 16px;
+}
+
+.header_nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 6px;
+}
+
+.header_nav a:hover{
+    text-decoration: underline;
+}
+
+.header_nav_active{
+    background-color: #cbe300;
+    color: #0c1014;
+    pointer-events: none;
+}
+
+.main_title{
+    font-size: 62px;
+    text-transform: uppercase;
+    margin: 46px 0;
+}
+
+.pricing{
+    display: flex;
+    gap: 16px;
+}
+
+.pricing_plans{
+    flex: 1;
+    background-color: #1f262c;
+    padding: 16px;
+    border-radius: 6px;
+    box-shadow: 0 5px 12px -6px #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.class_plan_title{
+    text-transform: uppercase;
+    border-bottom: 2px solid #cbe300;
+    margin-top: 0;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.pricing_plans p{
+    margin-top: 0;
+}
+
+.pricing_plans_price{
+    font-size: 34px;
+}
+
+.pricing_plans_features{
+    margin: 0 0 35px;
+    color: #b5b5b5;
+    padding-left: 16px;
+    line-height: 1.8;
+    flex-grow: 1;
+}
+
+.pricing_plans_features li::marker{
+    color: #cbe300;
+}
+
+.pricing_plans_cta{
+    text-decoration: none;
+    color: #0c1014;
+    background-color: #cbe300;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px 10px;
+    text-align: center;
+}
+
+.pricing_plans_cta:hover{
+    outline: 2px solid #cbe300;
+    background-color: transparent;
+    color: #cbe300;
+}
