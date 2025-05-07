@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>eh o forms</title>
+    <style>
+        input{
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .comorbidade{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <form ">
+        <fieldset>
+            <legend>introdução</legend>
+            <label for="email">email</label>
+            <input type="email" name="email" required>
+            <label for="filhos">quantidade de filhos</label>
+            <input type="number" id="filhos" min="0" max="100">
+            <input type="date" min="2025-01-01" max="2025-05-07">
+            <fieldset class="comorbidade">
+                <legend>possui comorbidade?</legend>
+                <input type="radio" name="comorbidade" value="sim">sim
+                <input type="radio" name="comorbidade" value="nao">nopzz
+            </fieldset>
+            <fieldset class="interesse">
+                <legend>interesse</legend>
+                <label><input type="checkbox" name="interesse" value="html">HTML</label>
+                <label><input type="checkbox" name="interesse" value="css">CSS</label>
+                <label><input type="checkbox" name="interesse" value="js">JS</label>
+            </fieldset>
+            <fieldset>
+                <legend>escolha uma linguagem</legend>
+                <select name="linguagem" required>
+                    <option value="">selecione</option>
+                    <option value="html">html</option>
+                    <option value="css">css</option>
+                    <option value="js">js</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>linguagem</legend>
+                <select name="linguagem2">
+                    <optgroup label="front">
+                        <option value="html">html</option>
+                        <option value="css">css</option>
+                        <option value="js">js</option>
+                    </optgroup>
+                    <optgroup label="back">
+                        <option value="laravel">laravel</option>
+                        <option value="express">express</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>linguagem</legend>
+                <input type="text" list="linguagemlist">
+                <datalist id="linguagemlist">
+                    <option value="html"></option>
+                    <option value="css"></option>
+                    <option value="js"></option>
+                    <option value="laravel"></option>
+                    <option value="express"></option>
+                </datalist>
+            </fieldset>
+            <fieldset>
+                <legend>envie sua mensagem</legend>
+                <textarea name="msg" cols="10" rows="10"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Contrato de Utilização</legend>
+                <textarea cols="50" rows="8" readonly>
+            Contrato de Utilização
+            1.1 - Cláusula 1
+            1.2 - Romero Britto
+                </textarea>
+                <label><input type="checkbox" name="aceito"> Li e aceito</label>
+            </fieldset>
+            <fieldset>
+                <input type="file">
+                <input type="hidden" value="valor_escondido">
+                <input type="button" value="botao">
+                <button>botao</button>
+                <input type="search" placeholder="busca tudo">
+                <input type="range" min="0" max="0"> 
+                <input type="time">
+                <input type="color">
+                <input type="submit" value="entrar" class="btn">                
+            </fieldset>
+            <input type="submit" value="Entrar" class="btn">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
