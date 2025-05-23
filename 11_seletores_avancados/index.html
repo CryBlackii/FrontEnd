@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Seletores Avançados</title>
+    <style>
+        article{
+            background-color: beige;
+        }
+        article p{
+            color: red;
+        }
+        article p a{
+            color: yellow;
+        }
+        article p a b{
+            color: blue;
+        }
+        article p{
+            background-color: beige;
+        }
+        article p > a{
+            background-color: yellow;
+        }
+        article a > b{
+            background-color: lightblue;
+        }
+        article h3 + p{
+            color: red;
+        }
+        article h3 ~ p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h3>Teste no html o que cada article faz!</h3>
+        <p>paragrafo <a href="#">com ancora<b> negrito</b></a></p>
+        <p>paragrafo <a href="#">com ancora<b> negrito</b></a></p>
+        <p>paragrafo <a href="#">com ancora<b> negrito</b></a></p>
+    </article>
+</body>
+</html>

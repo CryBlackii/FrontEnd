@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>PSEUDO CLASSES</title>
+    <style>
+        button{
+            background-color: #7a7979;
+            color: #fff;
+            border: none;
+            padding: 1em;
+            margin-bottom: .5em;
+        }
+        button:disabled{
+            opacity: .5;
+        }
+        p:empty::before{
+            content: 'paragrafo';
+        }
+        a:hover, a:focus{
+            background-color: yellow;
+        }
+        input[type="text"]:read-write{
+            background-color: #999;
+            border: none;
+            padding: .5em;
+        }
+        input[type="text"]:read-only{
+            background-color: blue;
+            border: none;
+            padding: .5em;
+        }
+        input[type="text"]:disabled{
+            background-color: red;
+            border: none;
+            padding: .5em;
+        }
+        input[type="text"]:placeholder-shown{
+            color: yellow;
+            border: none;
+            padding: .5em;
+        }
+
+    </style>
+</head>
+<body>
+    <button>Vai</button>
+    <br/>
+    <button disabled>Vai disabled</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit explicabo laboriosam ab deleniti voluptas. Debitis maxime explicabo dolorum officia vero natus voluptate unde, nihil, quos deleniti incidunt voluptatem magni veritatis.</p>
+    <p> </p>
+    <p>teste</p>
+    <p></p>
+    <p>teste</p>
+    <ul>
+        <li><a href="#">link falso</a></li>
+        <li><a href="#">link falso</a></li>
+        <li><a href="#">link falso</a></li>
+        <li><a href="#">link falso</a></li>
+        <li><a href="#">link falso</a></li>
+    </ul>
+    <form action="#">
+        <input type="text" value="valor_inicial"><br/><br>
+        <input type="text" value="valor" disabled><br/><br>
+        <input type="text" value="valor" readonly><br/><br>
+        <input type="text" placeholder="placeholder"><br/><br>
+        <input type="text"><br/><br>
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Seletores Avançados</title>
+    <style>
+        p{
+            text-align: center;
+        }
+        p::before{
+            content: "<<<";
+        }
+        p::after{
+            content: ">>>";
+        }
+        div::before{
+            content: "";
+            width: 1em;
+            height: 1em;
+            background-color: red;
+            display: block;
+        }
+        div::after{
+            content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_BAsHxkdbvWSDiucIpmzhEY3TrLDxOoCa9w&s");
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Parágrafo com texto simples</p>
+    </div>
+</body>
+</html>
