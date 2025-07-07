@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let n1 = parseFloat(prompt('o claudio tirou quanto na primeira nota'));
+        let n2 = parseFloat(prompt('o claudio tirou quanto na segunda nota'));
+
+        if(isNaN(n1) || isNaN(n2)){
+            alert("digite apenas numeros");
+        } else if(n1 > 10 && n1 >=0 || n2 > 10 && n2 >=0){
+           alert('digite numeros validos');
+        } else {
+            media = (n1+n2)/2;
+
+            if(media >= 7){
+            alert('Aprovado');
+            } else if(media >=5){
+                alert('Exame fi');
+            } else {
+                alert('REPROVADO BURRO BURRO');
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <h1>operetiones</h1>
+</body>
+</html>

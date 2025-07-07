@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #191919;
+    color: aliceblue;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 20px 60px;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 100%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+    width: 6rem;
+    height: auto;
+}
+
+.logo img::selection{
+    background-color: #681bc6;
+    color: #191919;
+}
+
+.title_logo{
+    font-size: 1.4em;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.title_logo::selection{
+    background-color: #681bc6;
+    color: #191919;
+}
+
+@media screen and (min-width: 63em){
+    .opcoes{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+
+    .opcoes a{
+        color: aliceblue;
+        text-decoration: none;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .opcoes a:hover{
+        color: #191919;
+    }
+
+    .opcoes a::selection{
+        background-color: #681bc6;
+        color: #191919;
+    }  
+}
+
+@media screen and (max-width: 63em){
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .logo-pesquisa{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo img{
+        height: 40px;
+    }
+
+    .title_logo{
+        font-size: 1.3em;
+        color: white;
+    }
+
+    .opcoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        list-style: none;
+        padding: 0;
+        margin: 20px 0 0 0;
+    }
+
+    .opcoes a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 8px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        font-size: 0.9em;
+    }
+
+    .opcoes a:hover{
+        background-color: #681bc6;
+        color: aliceblue;
+    }
+}
+
+
+@media screen and (min-width: 63em){
+    .banner{
+    position: relative;
+    background: url(../imgs/evangelicos.png) center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+
+    .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(25, 25, 25, 0.6), rgba(25, 25, 25, 1));
+    z-index: 1;
+    }
+}
+
+@media screen and (max-width: 63em){
+    .banner{
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(25, 25, 25, 0.6), rgba(25, 25, 25, 1));
+        z-index: 1;
+    }
+
+    body{
+        padding-top: 150px; /* Ajuste conforme a altura do seu header */
+    }
+    
+    .texto-principal{
+        padding-top: 100px; 
+    }
+}
+
+.texto-principal{
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.texto-principal h2{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.texto-principal h2::selection{
+    background-color: #681bc6;
+    color: #191919;
+}
+
+.botao-conta{
+    background-color: #681bc6;
+    border: 1px solid #681bc6;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.botao-conta:hover{
+    background-color: #3c0677;
+}
+
+.botao-conta::selection{
+    background-color: #681bc6;
+    color: #191919;
+}
+
+.cartazes{
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #333;
+}
+
+.cartazes img{
+    width: 120px;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+    max-width: 100%;
+}
+
+.cartazes img:hover{
+    transform: scale(1.5);
+}
+
+.main-review{
+    background-color: #191919;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main-review h3{
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+.main-review h3::selection{
+    background-color: #681bc6;
+    color: #191919;
+}
+
+.review{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+.review::selection{
+    background-color: #681bc6;
+    color: #191919;
+}
+
+.review img{
+    width: 60px;
+    border-radius: 4px;
+}
+
+.review h4{
+    margin: 0;
+    font-size: 1em;
+}
+
+.review h4::selection{
+    background-color: #681bc6;
+    color: #191919;
+}
+
+.review span{
+    color: #681bc6;
+    font-weight: normal;
+}
+
+.review span::selection{
+    background-color: #681bc6;
+    color: #191919;
+}
+
+.review p{
+    margin: 5px 0;
+}
+
+.review p::selection{
+    background-color: #681bc6;
+    color: #191919;
+}
+
+.review strong::selection{
+    background-color: #681bc6;
+    color: #191919;
+}
+
+.review small{
+    color: aliceblue;
+}
+
+.review small::selection{
+    background-color: #681bc6;
+    color: #191919;
+}
+
+footer{
+    background-color: #2b3440;
+    color: aliceblue;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer p::selection{
+    background-color: #681bc6;
+    color: #191919;
+}
+
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal.hidden{
+  display: none;
+}
+
+.modal-content{
+  background-color: #191919;
+  color: aliceblue;
+  padding: 30px;
+  border-radius: 10px;
+  width: 350px;
+  position: relative;
+}
+
+.close{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.modal-content h2{
+  color: aliceblue;
+}
+
+.modal-content form label{
+  display: block;
+  margin-top: 10px;
+  color: aliceblue;
+}
+
+.modal-content form input[type="email"], .modal-content form input[type="text"], .modal-content form input[type="password"]{
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  background-color: #333;
+  border: 1px solid #333;
+  border-radius: 5px;
+  color: aliceblue;
+  box-sizing: border-box;
+}
+
+.form-checkbox input[type="checkbox"]{
+    accent-color: #681bc6;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.modal-content form input:focus{
+  outline: none;
+  border-color: #681bc6;
+}
+
+.checkboxes{
+  font-size: 14px;
+  margin-top: 10px;
+  color: aliceblue;
+}
+
+.checkboxes input{
+  margin-right: 5px;
+}
+
+.modal-content form button{
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  background-color: #681bc6;
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modal-content form button:hover{
+  background-color: #681bc6;
+}

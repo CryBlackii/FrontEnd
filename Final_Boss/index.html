@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Letterboxd</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <img src="imgs/lobo mau.png" alt="Logo do Site do Letterboxd">
+                </a>
+                <h1 class="title_logo">Letterboxd</h1>
+            </div>
+            <ul class="opcoes">
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Create Account</a></li>
+                <li><a href="#">Films</a></li>
+                <li><a href="#">Lists</a></li>
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Journal</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="overlay"></div>
+            <div class="texto-principal">
+                <h2>Acompanhe os filmes que você assistiu.<br>
+                    Compre seus filmes favoritos diretamente aqui.<br>
+                    Compartilhe com seus amigos as melhores indicações e ofertas.
+                </h2>
+                <button class="botao-conta">Comece agora mesmo</button>
+            </div>
+        </section>
+
+        <section class="cartazes">
+            <a href="#"><img src="./imgs/banner batman.png" alt="The Batman"></a>
+            <a href="#"><img src="./imgs/banner dbs.png" alt="Dragon Ball Super: Broly"></a>
+            <a href="#"><img src="./imgs/banner evangelion.png" alt="Evangelion"></a>
+            <a href="#"><img src="./imgs/banner shrek.png" alt="Shrek"></a>
+            <a href="#"><img src="./imgs/banner scott pilgrim.png" alt="Scott Pilgrim Contra o Mundo"></a>
+            <a href="#"><img src="./imgs/banner scooby.png" alt="Scooby-Doo"></a>
+            <a href="#"><img src="./imgs/banner freddy.png" alt="A Hora do Pesadelo"></a>
+        </section>
+
+        <section class="main-review">
+            <h3>REVIEWS POPULARES DA SEMANA</h3>
+            <div class="review">
+                <img src="./imgs/banner mib.png" alt="Homens de Preto">
+                <div>
+                    <h4>Homens de Preto <span>★★★★½</span></h4>
+                    <p><strong>JOrge</strong></p>
+                    <p>Agentes secretos caçando aliens disfarçados no meio da gente. Muito estilo, piadas rápidas e um universo de sci-fi divertido. Clássico de ação com humor que não envelhece!</p>
+                    <small>♡ 17,834 likes</small>
+                </div>
+            </div>
+            <div class="review">
+                <img src="./imgs/banner twinlight.png" alt="Crepusculo">
+                <div>
+                    <h4>Crepusculo <span>★★★★★</span></h4>
+                    <p><strong>John A Biava</strong></p>
+                    <p>Romance adolescente cheio de tensão, vampiros e lobisomens. Drama, amor impossível e aquela vibe meio sombria que conquistou uma legião de fãs (e memes até hoje).</p>
+                    <small>♡ 5,928 likes</small>
+                </div>
+            </div>
+            <div class="review">
+                <img src="./imgs/banner princess and frog.png" alt="A Princesa e o Sapo">
+                <div>
+                    <h4>A Princesa e o Sapo <span>★★★★★★★★★★</span></h4>
+                    <p><strong>Jujubinha</strong></p>
+                    <p>Conto de fada moderno com toque de cultura cajun, muita música boa e uma protagonista determinada que quebra estereótipos. Encantador, divertido e cheio de magia.</p>
+                    <small>♡ 9999,999 likes</small>
+                </div>
+            </div>
+            <div class="review">
+                <img src="./imgs/banner pinguisn.png" alt="os Pinguins de Madagascar">
+                <div>
+                    <h4>os Pinguins de Madagascar <span>★★★½</span></h4>
+                    <p><strong>Romero Brito</strong></p>
+                    <p>Quarteto de pinguins espertos, atrapalhados e prontos pra confusão. Humor rápido, ação non-stop e uma animação que diverte todas as idades.</p>
+                    <small>♡ 928 likes</small>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright Dev Web</p> 
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Fuga accusantium iusto iure ea soluta explicabo fugit 
+            eligendi perspiciatis animi quisquam voluptatem ratione 
+            necessitatibus voluptas est quos odio iste, labore officiis?
+        </p>
+    </footer>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Junte-se ao Letterboxd</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Endereço de e-mail" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="username" name="username" placeholder="Nome de usuário" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="Senha" required>
+                </div>
+                <div class="form-checkbox">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">Declaro que tenho pelo menos 18 anos e aceito os termos de uso.</label>
+                </div>
+                <div class="form-checkbox">
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    <label for="privacy">Aceito a Política de Privacidade e concordo com o tratamento dos meus dados pessoais conforme descrito.</label>
+                </div>
+                <button type="submit" class="submit-btn">CADASTRAR</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
